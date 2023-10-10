@@ -1,0 +1,186 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color:rgb(212, 243, 232);
+}
+
+.trCancel{
+    width: 15em;
+    height: 4em;
+    font-weight: bold;
+    color: var(--gray);
+    text-decoration: drop-shadow;
+    padding: .25em;
+    border-radius: .50em;
+    background: #333;
+    color: white;
+    font-size: 1em;
+}
+
+.acptCodeWordInp::placeholder{
+    color: #000000;
+}
+
+.acptBtnTr, .acptBtnTrnsfr{
+    margin: 2em;
+    width: 15em;
+    height: 4em;
+    font-weight: bold;
+    color: var(--gray);
+    text-decoration: drop-shadow;
+    padding: .25em;
+    border-radius: .50em;
+    background: #333;
+    color: white;
+    font-size: 1em;
+}
+
+.acptTrs, .sentTransfers{
+    margin: 2em;
+    text-align: center;
+    border: solid;
+    display: block;
+    height: 50vh;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(151, 236, 203);
+    box-shadow: 10px 5px 5px grey;
+    border-radius: 5em;
+}
+
+
+input{
+    background-color: #acb7c2;
+    width: 26em;
+    height: 3em;
+    border-radius: .25em;
+    margin: 5px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+select {
+    appearance: none;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: rgb(75, 56, 56);
+    background-image: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    width: 27em;
+    text-align: center;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: #f39c12;
+}
+
+a {
+    font-weight: bold;
+    color: var(--gray);
+    text-decoration: drop-shadow;
+    padding: .25em;
+    border-radius: .50em;
+    background: pink;
+}
+
+.transaction {
+    text-align: center;
+    border: solid;
+    display: block;
+    height: 50vh;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(151, 236, 203);
+    box-shadow: 10px 5px 5px grey;
+    border-radius: 5em;
+}
+
+.wrapper {
+    width: 20vh;
+    margin-top: 5em;
+    margin-left: 26em;
+    position: static;
+    transform: translate(0%, 50%);
+}
+
+.link_wrapper {
+    position: relative;
+}
+
+a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+}
+
+a:hover {
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+}
+
+a:hover+.icon {
+    border: 3px solid #2ecc71;
+    right: -25%;
+}
